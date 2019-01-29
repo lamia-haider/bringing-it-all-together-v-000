@@ -73,7 +73,7 @@ class Dog
      WHERE name = ?
      LIMIT 1
      SQL
-     dog = DB[:conn].execute(sql,name)
+     dog = DB[:conn].execute(sql,name)[0]
      binding.pry
      self.new_from_db(dog)
    end
