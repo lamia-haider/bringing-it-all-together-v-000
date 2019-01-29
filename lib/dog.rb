@@ -55,6 +55,7 @@ class Dog
     sql = <<-SQL
     SELECT * FROM dogs
     WHERE name = ? AND breed = ?
+    LIMIT 1
     SQL
     dogarray = DB[:conn].execute(sql, name, breed).flatten
     if !dogarray.empty?
