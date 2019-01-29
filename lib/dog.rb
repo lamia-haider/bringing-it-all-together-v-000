@@ -78,7 +78,7 @@ class Dog
      self.new_from_db(dog)
    end
 
-   def self.update #updating the database from change in instance
+   def update #updating the database from change in instance
      sql = <<-SQL
      UPDATE dogs SET name = ?, breed = ? WHERE id = ?
      SQL
