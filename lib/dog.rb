@@ -74,7 +74,7 @@ class Dog
      LIMIT 1
      SQL
      dog = DB[:conn].execute(sql,name)[0]
-     binding.pry
+  #   binding.pry
      self.new_from_db(dog)
    end
 
