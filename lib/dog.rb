@@ -58,6 +58,7 @@ class Dog
     LIMIT 1
     SQL
     dogarray = DB[:conn].execute(sql, name, breed).flatten
+    binding.pry
     if !dogarray.empty?
       dog = Dog.new(id: dogarray[0], name: dogarray[1], breed: dogarray[2])
     else
