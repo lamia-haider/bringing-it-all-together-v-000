@@ -62,6 +62,9 @@ class Dog
      dog
    end
 
+   def self.new_from_db #return instance from array, constructor
+
+
 
 
 
